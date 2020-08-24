@@ -14,7 +14,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
-    var nomDuSet = [String]()
+   var nomDuSet: [String] = [   //an array of three strings
+          "set 1",
+          "set 2",
+          "set 3"
+      ];
+
     var set = [[String: Any]]()
     var chosenSet = ""
     var chosenWords: Dictionary<String, String> = [:]
@@ -33,13 +38,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
        
         
-        nomDuSet.append("set 1")
-        nomDuSet.append("set 2")
-        nomDuSet.append("set 3")
         
         
         
-        var set = [["bonjour": "Guten Tag", "bonne nuit": "Guten Nacht"], ["Salut": "hallo", "fussball": "foot"], ["PSG": "Bayern", "Paris" : "Berlin"]]
+        
+      var set: [[String: Any]] = [   //an array of three dictionaries
+        ["bonjour": "Guten Tag", "bonne nuit": "Guten Nacht"],
+        ["Salut": "hallo", "fussball": "foot"],
+        ["PSG": "Bayern", "Paris": "Berlin"]
+      ];
         
         // Do any additional setup after loading the view
     }
